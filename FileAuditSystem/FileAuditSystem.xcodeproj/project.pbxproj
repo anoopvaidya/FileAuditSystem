@@ -59,15 +59,23 @@
 			isa = PBXGroup;
 			children = (
 				045EC3C929FC9DC900256E43 /* AppDelegate.swift */,
+				045EC3E029FCAB9F00256E43 /* UI Screens */,
 				045EC3CB29FC9DCA00256E43 /* Assets.xcassets */,
 				045EC3CD29FC9DCA00256E43 /* MainMenu.xib */,
 				045EC3D029FC9DCA00256E43 /* FileAuditSystem.entitlements */,
+			);
+			path = FileAuditSystem;
+			sourceTree = "<group>";
+		};
+		045EC3E029FCAB9F00256E43 /* UI Screens */ = {
+			isa = PBXGroup;
+			children = (
 				045EC3D829FCA62400256E43 /* FolderManageViewController.swift */,
 				045EC3D929FCA62400256E43 /* FolderManageViewController.xib */,
 				045EC3DC29FCA94D00256E43 /* CheckExtensionViewController.swift */,
 				045EC3DD29FCA94D00256E43 /* CheckExtensionViewController.xib */,
 			);
-			path = FileAuditSystem;
+			path = "UI Screens";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
