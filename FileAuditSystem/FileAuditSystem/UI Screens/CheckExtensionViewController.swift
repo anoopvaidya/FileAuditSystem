@@ -14,8 +14,8 @@ class CheckExtensionViewController: NSViewController {
     let extIdentifier = "com.anoop.FileAuditSystem.FileAuditSystemExtension"
     let extensionDelegate = ExtensionDelegate()
     
-    let folderManageVC = FolderManageViewController()
-
+    var installerDelegate: InstallerDelegate?
+    
     var isRequested = false
     
     @IBAction func install(_ sender: Any) {
@@ -24,9 +24,7 @@ class CheckExtensionViewController: NSViewController {
             return
         }
         
-        // async
-        
-        DispatchQueue.main.async {
+        DispatchQueue.global(qos: .userInitiated).async {
             let request = OSSystemExtensionRequest.activationRequest(forExtensionWithIdentifier: self.extIdentifier, queue: DispatchQueue.main)
             request.delegate = self.extensionDelegate
             OSSystemExtensionManager.shared.submitRequest(request)
@@ -34,13 +32,14 @@ class CheckExtensionViewController: NSViewController {
             print("Sext install request submitted")
             
             // wait till gets installed, and then proceed to next UI screen
-//            while self.extensionDelegate.status == .InProgress {
-//                print("kext waiting for approvals...")
-//            }
+            while self.extensionDelegate.status != .Success {
+                print("kext waiting for approval...status is: \(self.extensionDelegate.status)")
+            }
+            print("sext installed")
+            DispatchQueue.main.async {
+                self.installerDelegate?.extensionInstalled()
+            }
         }
-        
-        //main
-        print("sext installed")
     }
     
     @IBAction func uninstall(_ sender: Any) {

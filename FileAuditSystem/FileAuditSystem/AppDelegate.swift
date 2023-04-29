@@ -8,7 +8,8 @@
 import Cocoa
 
 @main
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, InstallerDelegate {
+   
 
     @IBOutlet var window: NSWindow!
     
@@ -25,7 +26,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         else {
             self.window.contentView?.addSubview(checkSextVC.view)
+            checkSextVC.installerDelegate = self
         }
+    }
+    
+    func extensionInstalled() {
+        print("extension installed")
+        checkSextVC.view.removeFromSuperview()
+        self.window.contentView?.addSubview(folderManageVC.view)
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {

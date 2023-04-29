@@ -19,6 +19,7 @@
 		04C3A1D729FD545E00EE8FB6 /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EC3F929FCB3D200256E43 /* libEndpointSecurity.tbd */; };
 		04C3A1DA29FD545E00EE8FB6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3A1D929FD545E00EE8FB6 /* main.swift */; };
 		04C3A1DF29FD545E00EE8FB6 /* com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 04C3A1D629FD545E00EE8FB6 /* com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04C3A1E429FD5B0E00EE8FB6 /* InstallerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		04C3A1D929FD545E00EE8FB6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		04C3A1DB29FD545E00EE8FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C3A1DC29FD545E00EE8FB6 /* FileAuditSystemExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileAuditSystemExtension.entitlements; sourceTree = "<group>"; };
+		04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				045EC3C929FC9DC900256E43 /* AppDelegate.swift */,
+				04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */,
 				045EC3E029FCAB9F00256E43 /* UI Screens */,
 				045EC3CB29FC9DCA00256E43 /* Assets.xcassets */,
 				045EC3CD29FC9DCA00256E43 /* MainMenu.xib */,
@@ -262,6 +265,7 @@
 				045EC3DE29FCA94D00256E43 /* CheckExtensionViewController.swift in Sources */,
 				045EC3CA29FC9DC900256E43 /* AppDelegate.swift in Sources */,
 				045EC40C29FCB9AE00256E43 /* ExtensionDelegate.swift in Sources */,
+				04C3A1E429FD5B0E00EE8FB6 /* InstallerDelegate.swift in Sources */,
 				045EC3DA29FCA62400256E43 /* FolderManageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
