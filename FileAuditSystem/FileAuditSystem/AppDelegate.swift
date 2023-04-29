@@ -13,19 +13,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var window: NSWindow!
     
     let folderManageVC = FolderManageViewController()
+    let checkSextVC = CheckExtensionViewController()
 
     func isExtensionUpAndRunning() -> Bool {
-        return true;
+        return false;
     }
     
         
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        
         if isExtensionUpAndRunning() {
             self.window.contentView?.addSubview(folderManageVC.view)
         }
         else {
-            print("check sext")
+            self.window.contentView?.addSubview(checkSextVC.view)
         }
     }
     
