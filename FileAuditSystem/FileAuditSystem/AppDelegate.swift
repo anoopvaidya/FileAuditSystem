@@ -19,7 +19,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return false;
     }
     
-        
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if isExtensionUpAndRunning() {
             self.window.contentView?.addSubview(folderManageVC.view)

@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  Extension
+//  FileAuditSystemExtension
 //
 //  Created by Anoop Vaidya on 29/04/23.
 //
@@ -13,9 +13,6 @@ var client: OpaquePointer?
 // Create the client
 let res = es_new_client(&client) { (client, message) in
     // Do processing on the message received
-    
-    print(client)
-    print(message)
 }
 
 if res != ES_NEW_CLIENT_RESULT_SUCCESS {
