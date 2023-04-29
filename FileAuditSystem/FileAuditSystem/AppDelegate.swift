@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let checkSextVC = CheckExtensionViewController()
 
     func isExtensionUpAndRunning() -> Bool {
-        return true;
+        return false;
     }
     
         
