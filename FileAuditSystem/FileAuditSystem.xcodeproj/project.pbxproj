@@ -10,6 +10,10 @@
 		045EC3CA29FC9DC900256E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC3C929FC9DC900256E43 /* AppDelegate.swift */; };
 		045EC3CC29FC9DCA00256E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3CB29FC9DCA00256E43 /* Assets.xcassets */; };
 		045EC3CF29FC9DCA00256E43 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3CD29FC9DCA00256E43 /* MainMenu.xib */; };
+		045EC3DA29FCA62400256E43 /* FolderManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC3D829FCA62400256E43 /* FolderManageViewController.swift */; };
+		045EC3DB29FCA62400256E43 /* FolderManageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3D929FCA62400256E43 /* FolderManageViewController.xib */; };
+		045EC3DE29FCA94D00256E43 /* CheckExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC3DC29FCA94D00256E43 /* CheckExtensionViewController.swift */; };
+		045EC3DF29FCA94D00256E43 /* CheckExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3DD29FCA94D00256E43 /* CheckExtensionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +22,10 @@
 		045EC3CB29FC9DCA00256E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045EC3CE29FC9DCA00256E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		045EC3D029FC9DCA00256E43 /* FileAuditSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileAuditSystem.entitlements; sourceTree = "<group>"; };
+		045EC3D829FCA62400256E43 /* FolderManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderManageViewController.swift; sourceTree = "<group>"; };
+		045EC3D929FCA62400256E43 /* FolderManageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderManageViewController.xib; sourceTree = "<group>"; };
+		045EC3DC29FCA94D00256E43 /* CheckExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckExtensionViewController.swift; sourceTree = "<group>"; };
+		045EC3DD29FCA94D00256E43 /* CheckExtensionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckExtensionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 				045EC3CB29FC9DCA00256E43 /* Assets.xcassets */,
 				045EC3CD29FC9DCA00256E43 /* MainMenu.xib */,
 				045EC3D029FC9DCA00256E43 /* FileAuditSystem.entitlements */,
+				045EC3D829FCA62400256E43 /* FolderManageViewController.swift */,
+				045EC3D929FCA62400256E43 /* FolderManageViewController.xib */,
+				045EC3DC29FCA94D00256E43 /* CheckExtensionViewController.swift */,
+				045EC3DD29FCA94D00256E43 /* CheckExtensionViewController.xib */,
 			);
 			path = FileAuditSystem;
 			sourceTree = "<group>";
@@ -116,7 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045EC3DB29FCA62400256E43 /* FolderManageViewController.xib in Resources */,
 				045EC3CC29FC9DCA00256E43 /* Assets.xcassets in Resources */,
+				045EC3DF29FCA94D00256E43 /* CheckExtensionViewController.xib in Resources */,
 				045EC3CF29FC9DCA00256E43 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045EC3DE29FCA94D00256E43 /* CheckExtensionViewController.swift in Sources */,
 				045EC3CA29FC9DC900256E43 /* AppDelegate.swift in Sources */,
+				045EC3DA29FCA62400256E43 /* FolderManageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
