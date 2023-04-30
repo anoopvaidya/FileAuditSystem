@@ -10,7 +10,7 @@ import SystemExtensions
 
 class ExtensionInstaller : NSObject {
     
-    let extIdentifier = "com.anoop.FileAuditSystem.FileAuditSystemExtension"
+    let extIdentifier = "com.anoop.FileAuditSystem.Extension"
 
     let extensionDelegate = ExtensionDelegate()
     var installerDelegate: InstallerDelegate?

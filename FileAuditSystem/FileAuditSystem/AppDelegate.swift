@@ -12,6 +12,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, InstallerDelegate {
    
     @IBOutlet var window: NSWindow!
     
+    //VC
     let folderManageVC = FolderManageViewController()
     let checkSextVC = CheckExtensionViewController()
     
@@ -21,12 +22,16 @@ class AppDelegate: NSObject, NSApplicationDelegate, InstallerDelegate {
         return false;
     }
     
-    func applicationDidFinishLaunching(_ aNotification: Notification) {        
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        
+        NSLog("Hello Anay 1")
+        print("Anay 2")
+        
         if isExtensionUpAndRunning() {
             self.window.contentView?.addSubview(folderManageVC.view)
         }
         else {
-            self.window.contentView?.addSubview(checkSextVC.view)
+            self.window.contentView?.addSubview(checkSextVC.view) //sext
             checkSextVC.installerDelegate = self
         }
     }
