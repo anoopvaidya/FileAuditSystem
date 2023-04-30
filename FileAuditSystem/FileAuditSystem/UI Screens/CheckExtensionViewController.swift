@@ -34,4 +34,43 @@ class CheckExtensionViewController: NSViewController {
         self.isRequested = false
         extensionInstaller.uninstall()
     }
+    
+    // test
+    
+    @IBOutlet var fileName: NSTextField!
+    @IBOutlet var operation: NSTextField!
+    @IBOutlet var processId: NSTextField!
+    
+    @IBAction func addRecord(_ sender: Any) {
+                
+        let logObject = LogObject(fileName: fileName.stringValue,
+                                   time: Date(),
+                                  userName: NSFullUserName(),
+                                   processId: processId.stringValue,
+                                   accessType: getAccessType())
+        
+        
+        if Logger.log(logObject: logObject) {
+            print("Succeed to log")
+        }
+        else {
+            print("Failed to log")
+        }
+        
+    }
+    
+    func getAccessType() -> AccessType{
+        switch operation.stringValue {
+        case "c":
+            return .Create
+        case "u":
+            return .Update
+        case "r":
+            return .Read
+        case "d":
+            return .Delete
+        default:
+            return .Delete
+        }
+    }
 }
