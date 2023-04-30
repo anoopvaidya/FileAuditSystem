@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		04565C5E29FE5D8D00A8AA00 /* ExtensionInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565C5D29FE5D8D00A8AA00 /* ExtensionInstaller.swift */; };
+		04565C6229FE9A1D00A8AA00 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565C6129FE9A1D00A8AA00 /* Logger.swift */; };
+		04565C6429FE9A8200A8AA00 /* LogObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565C6329FE9A8200A8AA00 /* LogObject.swift */; };
+		04565C6729FE9BB400A8AA00 /* AccessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565C6629FE9BB400A8AA00 /* AccessType.swift */; };
 		045EC3CA29FC9DC900256E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC3C929FC9DC900256E43 /* AppDelegate.swift */; };
 		045EC3CC29FC9DCA00256E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3CB29FC9DCA00256E43 /* Assets.xcassets */; };
 		045EC3CF29FC9DCA00256E43 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3CD29FC9DCA00256E43 /* MainMenu.xib */; };
@@ -59,6 +62,9 @@
 
 /* Begin PBXFileReference section */
 		04565C5D29FE5D8D00A8AA00 /* ExtensionInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionInstaller.swift; sourceTree = "<group>"; };
+		04565C6129FE9A1D00A8AA00 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		04565C6329FE9A8200A8AA00 /* LogObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogObject.swift; sourceTree = "<group>"; };
+		04565C6629FE9BB400A8AA00 /* AccessType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessType.swift; sourceTree = "<group>"; };
 		045EC3C629FC9DC900256E43 /* FileAuditSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileAuditSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045EC3C929FC9DC900256E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045EC3CB29FC9DCA00256E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +104,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04565C6529FE9B8F00A8AA00 /* Loging */ = {
+			isa = PBXGroup;
+			children = (
+				04565C6129FE9A1D00A8AA00 /* Logger.swift */,
+				04565C6329FE9A8200A8AA00 /* LogObject.swift */,
+				04565C6629FE9BB400A8AA00 /* AccessType.swift */,
+			);
+			path = Loging;
+			sourceTree = "<group>";
+		};
 		045EC3BD29FC9DC900256E43 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +144,7 @@
 				045EC3CB29FC9DCA00256E43 /* Assets.xcassets */,
 				045EC3CD29FC9DCA00256E43 /* MainMenu.xib */,
 				045EC3D029FC9DCA00256E43 /* FileAuditSystem.entitlements */,
+				04565C6529FE9B8F00A8AA00 /* Loging */,
 			);
 			path = FileAuditSystem;
 			sourceTree = "<group>";
@@ -268,7 +285,10 @@
 				04565C5E29FE5D8D00A8AA00 /* ExtensionInstaller.swift in Sources */,
 				045EC3DE29FCA94D00256E43 /* CheckExtensionViewController.swift in Sources */,
 				045EC3CA29FC9DC900256E43 /* AppDelegate.swift in Sources */,
+				04565C6429FE9A8200A8AA00 /* LogObject.swift in Sources */,
 				045EC40C29FCB9AE00256E43 /* ExtensionDelegate.swift in Sources */,
+				04565C6729FE9BB400A8AA00 /* AccessType.swift in Sources */,
+				04565C6229FE9A1D00A8AA00 /* Logger.swift in Sources */,
 				04C3A1E429FD5B0E00EE8FB6 /* InstallerDelegate.swift in Sources */,
 				045EC3DA29FCA62400256E43 /* FolderManageViewController.swift in Sources */,
 			);
