@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04565C5E29FE5D8D00A8AA00 /* ExtensionInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565C5D29FE5D8D00A8AA00 /* ExtensionInstaller.swift */; };
 		045EC3CA29FC9DC900256E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC3C929FC9DC900256E43 /* AppDelegate.swift */; };
 		045EC3CC29FC9DCA00256E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3CB29FC9DCA00256E43 /* Assets.xcassets */; };
 		045EC3CF29FC9DCA00256E43 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3CD29FC9DCA00256E43 /* MainMenu.xib */; };
@@ -57,6 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04565C5D29FE5D8D00A8AA00 /* ExtensionInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionInstaller.swift; sourceTree = "<group>"; };
 		045EC3C629FC9DC900256E43 /* FileAuditSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileAuditSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045EC3C929FC9DC900256E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045EC3CB29FC9DCA00256E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,7 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				045EC3C929FC9DC900256E43 /* AppDelegate.swift */,
+				04565C5D29FE5D8D00A8AA00 /* ExtensionInstaller.swift */,
 				04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */,
+				045EC40B29FCB9AE00256E43 /* ExtensionDelegate.swift */,
 				045EC3E029FCAB9F00256E43 /* UI Screens */,
 				045EC3CB29FC9DCA00256E43 /* Assets.xcassets */,
 				045EC3CD29FC9DCA00256E43 /* MainMenu.xib */,
@@ -135,7 +139,6 @@
 				045EC3D929FCA62400256E43 /* FolderManageViewController.xib */,
 				045EC3DC29FCA94D00256E43 /* CheckExtensionViewController.swift */,
 				045EC3DD29FCA94D00256E43 /* CheckExtensionViewController.xib */,
-				045EC40B29FCB9AE00256E43 /* ExtensionDelegate.swift */,
 			);
 			path = "UI Screens";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04565C5E29FE5D8D00A8AA00 /* ExtensionInstaller.swift in Sources */,
 				045EC3DE29FCA94D00256E43 /* CheckExtensionViewController.swift in Sources */,
 				045EC3CA29FC9DC900256E43 /* AppDelegate.swift in Sources */,
 				045EC40C29FCB9AE00256E43 /* ExtensionDelegate.swift in Sources */,
@@ -420,10 +424,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FileAuditSystem/FileAuditSystem.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXDQ3VB6JD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = NXDQ3VB6JD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -435,6 +442,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = DirectoryMonitorApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -447,10 +456,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FileAuditSystem/FileAuditSystem.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXDQ3VB6JD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = NXDQ3VB6JD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -462,6 +474,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = DirectoryMonitorApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -471,9 +485,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = FileAuditSystemExtension/FileAuditSystemExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXDQ3VB6JD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = NXDQ3VB6JD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FileAuditSystemExtension/Info.plist;
@@ -488,6 +504,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem.FileAuditSystemExtension;
 				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = DirectoryMonitor;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -498,9 +516,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = FileAuditSystemExtension/FileAuditSystemExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXDQ3VB6JD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = NXDQ3VB6JD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FileAuditSystemExtension/Info.plist;
@@ -515,6 +535,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem.FileAuditSystemExtension;
 				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = DirectoryMonitor;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
