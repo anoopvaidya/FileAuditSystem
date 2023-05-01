@@ -4,6 +4,11 @@
 //
 //  Created by Anoop Vaidya on 29/04/23.
 //
+// Currently all the folder paths are stored in userdefaults
+// There is only Adding new paths feature
+// This can be extended to have Remove folder path, save it in CoreData(or anyother way)
+// we can also have Remove folder path from the existing list of path
+
 
 import Cocoa
 
