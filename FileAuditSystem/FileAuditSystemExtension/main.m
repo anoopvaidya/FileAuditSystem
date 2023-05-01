@@ -71,7 +71,7 @@ void mutePath(es_client_t *client) {
     os_log(OS_LOG_DEFAULT,"Adding muted files list");
     
     NSArray<NSString *> *paths = @[
-        @"/Applications/",
+//        @"/Applications/",
         @"/bin/",
         @"/cores/",
         @"/Library/",
@@ -134,17 +134,17 @@ int main(int argc, char *argv[])
     
     mutePath(client);
     
-//    es_event_type_t events[] = {
-//        ES_EVENT_TYPE_NOTIFY_CREATE, //create file
-//        ES_EVENT_TYPE_NOTIFY_OPEN, // open file
-//        ES_EVENT_TYPE_NOTIFY_RENAME, // rename file
-//        ES_EVENT_TYPE_NOTIFY_CLOSE, // close file
-//        ES_EVENT_TYPE_NOTIFY_WRITE, // write to file
-//        ES_EVENT_TYPE_NOTIFY_UNLINK, // delete
-//        ES_EVENT_TYPE_NOTIFY_EXIT
-//    };
+    es_event_type_t events[] = {
+        ES_EVENT_TYPE_NOTIFY_CREATE, //create file
+        ES_EVENT_TYPE_NOTIFY_OPEN, // open file
+        ES_EVENT_TYPE_NOTIFY_RENAME, // rename file
+        ES_EVENT_TYPE_NOTIFY_CLOSE, // close file
+        ES_EVENT_TYPE_NOTIFY_WRITE, // write to file
+        ES_EVENT_TYPE_NOTIFY_UNLINK, // delete
+        ES_EVENT_TYPE_NOTIFY_EXIT
+    };
     
-    es_event_type_t events[] = { ES_EVENT_TYPE_NOTIFY_EXEC, ES_EVENT_TYPE_NOTIFY_FORK, ES_EVENT_TYPE_NOTIFY_EXIT };
+//    es_event_type_t events[] = { ES_EVENT_TYPE_NOTIFY_EXEC, ES_EVENT_TYPE_NOTIFY_FORK, ES_EVENT_TYPE_NOTIFY_EXIT };
 
     if (es_subscribe(client, events, sizeof(events) / sizeof(events[0])) != ES_RETURN_SUCCESS) {
         os_log(OS_LOG_DEFAULT, "Failed to subscribe to events");
