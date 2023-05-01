@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042B60D229FF7A8E000870EC /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EC3F929FCB3D200256E43 /* libEndpointSecurity.tbd */; };
+		042B60D529FF7A8E000870EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B60D429FF7A8E000870EC /* main.m */; };
+		042B60DA29FF7A8E000870EC /* com.anoop.FileAuditSystem.Extension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 042B60D129FF7A8E000870EC /* com.anoop.FileAuditSystem.Extension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		042B60E029FF7EE6000870EC /* libbsm.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 042B60DE29FF7BB1000870EC /* libbsm.tbd */; };
+		04565C5E29FE5D8D00A8AA00 /* ExtensionInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565C5D29FE5D8D00A8AA00 /* ExtensionInstaller.swift */; };
+		04565C6229FE9A1D00A8AA00 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565C6129FE9A1D00A8AA00 /* Logger.swift */; };
+		04565C6429FE9A8200A8AA00 /* LogObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565C6329FE9A8200A8AA00 /* LogObject.swift */; };
+		04565C6729FE9BB400A8AA00 /* AccessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565C6629FE9BB400A8AA00 /* AccessType.swift */; };
 		045EC3CA29FC9DC900256E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC3C929FC9DC900256E43 /* AppDelegate.swift */; };
 		045EC3CC29FC9DCA00256E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3CB29FC9DCA00256E43 /* Assets.xcassets */; };
 		045EC3CF29FC9DCA00256E43 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3CD29FC9DCA00256E43 /* MainMenu.xib */; };
@@ -16,18 +24,15 @@
 		045EC3DF29FCA94D00256E43 /* CheckExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3DD29FCA94D00256E43 /* CheckExtensionViewController.xib */; };
 		045EC40829FCB72400256E43 /* SystemExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EC40729FCB72400256E43 /* SystemExtensions.framework */; };
 		045EC40C29FCB9AE00256E43 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC40B29FCB9AE00256E43 /* ExtensionDelegate.swift */; };
-		04C3A1D729FD545E00EE8FB6 /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EC3F929FCB3D200256E43 /* libEndpointSecurity.tbd */; };
-		04C3A1DA29FD545E00EE8FB6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3A1D929FD545E00EE8FB6 /* main.swift */; };
-		04C3A1DF29FD545E00EE8FB6 /* com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 04C3A1D629FD545E00EE8FB6 /* com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		04C3A1E429FD5B0E00EE8FB6 /* InstallerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04C3A1DD29FD545E00EE8FB6 /* PBXContainerItemProxy */ = {
+		042B60D829FF7A8E000870EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 045EC3BE29FC9DC900256E43 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 04C3A1D529FD545E00EE8FB6;
+			remoteGlobalIDString = 042B60D029FF7A8E000870EC;
 			remoteInfo = FileAuditSystemExtension;
 		};
 /* End PBXContainerItemProxy section */
@@ -49,7 +54,7 @@
 			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				04C3A1DF29FD545E00EE8FB6 /* com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension in Embed System Extensions */,
+				042B60DA29FF7A8E000870EC /* com.anoop.FileAuditSystem.Extension.systemextension in Embed System Extensions */,
 			);
 			name = "Embed System Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +62,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		042B60D129FF7A8E000870EC /* com.anoop.FileAuditSystem.Extension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = com.anoop.FileAuditSystem.Extension.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		042B60D429FF7A8E000870EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		042B60D629FF7A8E000870EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042B60D729FF7A8E000870EC /* FileAuditSystemExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileAuditSystemExtension.entitlements; sourceTree = "<group>"; };
+		042B60DE29FF7BB1000870EC /* libbsm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbsm.tbd; path = usr/lib/libbsm.tbd; sourceTree = SDKROOT; };
+		042B60DF29FF7E32000870EC /* libbsm.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbsm.0.tbd; path = usr/lib/libbsm.0.tbd; sourceTree = SDKROOT; };
+		04565C5D29FE5D8D00A8AA00 /* ExtensionInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionInstaller.swift; sourceTree = "<group>"; };
+		04565C6129FE9A1D00A8AA00 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		04565C6329FE9A8200A8AA00 /* LogObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogObject.swift; sourceTree = "<group>"; };
+		04565C6629FE9BB400A8AA00 /* AccessType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessType.swift; sourceTree = "<group>"; };
 		045EC3C629FC9DC900256E43 /* FileAuditSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileAuditSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045EC3C929FC9DC900256E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045EC3CB29FC9DCA00256E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,14 +84,19 @@
 		045EC3F929FCB3D200256E43 /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
 		045EC40729FCB72400256E43 /* SystemExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemExtensions.framework; path = System/Library/Frameworks/SystemExtensions.framework; sourceTree = SDKROOT; };
 		045EC40B29FCB9AE00256E43 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		04C3A1D629FD545E00EE8FB6 /* com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
-		04C3A1D929FD545E00EE8FB6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		04C3A1DB29FD545E00EE8FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04C3A1DC29FD545E00EE8FB6 /* FileAuditSystemExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileAuditSystemExtension.entitlements; sourceTree = "<group>"; };
 		04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		042B60CE29FF7A8E000870EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042B60D229FF7A8E000870EC /* libEndpointSecurity.tbd in Frameworks */,
+				042B60E029FF7EE6000870EC /* libbsm.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		045EC3C329FC9DC900256E43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,22 +105,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04C3A1D329FD545E00EE8FB6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04C3A1D729FD545E00EE8FB6 /* libEndpointSecurity.tbd in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042B60D329FF7A8E000870EC /* FileAuditSystemExtension */ = {
+			isa = PBXGroup;
+			children = (
+				042B60D429FF7A8E000870EC /* main.m */,
+				042B60D629FF7A8E000870EC /* Info.plist */,
+				042B60D729FF7A8E000870EC /* FileAuditSystemExtension.entitlements */,
+			);
+			path = FileAuditSystemExtension;
+			sourceTree = "<group>";
+		};
+		04565C6529FE9B8F00A8AA00 /* Loging */ = {
+			isa = PBXGroup;
+			children = (
+				04565C6129FE9A1D00A8AA00 /* Logger.swift */,
+				04565C6329FE9A8200A8AA00 /* LogObject.swift */,
+				04565C6629FE9BB400A8AA00 /* AccessType.swift */,
+			);
+			path = Loging;
+			sourceTree = "<group>";
+		};
 		045EC3BD29FC9DC900256E43 = {
 			isa = PBXGroup;
 			children = (
 				045EC3C829FC9DC900256E43 /* FileAuditSystem */,
-				04C3A1D829FD545E00EE8FB6 /* FileAuditSystemExtension */,
+				042B60D329FF7A8E000870EC /* FileAuditSystemExtension */,
 				045EC3F829FCB3D200256E43 /* Frameworks */,
 				045EC3C729FC9DC900256E43 /* Products */,
 			);
@@ -110,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				045EC3C629FC9DC900256E43 /* FileAuditSystem.app */,
-				04C3A1D629FD545E00EE8FB6 /* com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension */,
+				042B60D129FF7A8E000870EC /* com.anoop.FileAuditSystem.Extension.systemextension */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,11 +151,14 @@
 			isa = PBXGroup;
 			children = (
 				045EC3C929FC9DC900256E43 /* AppDelegate.swift */,
+				04565C5D29FE5D8D00A8AA00 /* ExtensionInstaller.swift */,
 				04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */,
+				045EC40B29FCB9AE00256E43 /* ExtensionDelegate.swift */,
 				045EC3E029FCAB9F00256E43 /* UI Screens */,
 				045EC3CB29FC9DCA00256E43 /* Assets.xcassets */,
 				045EC3CD29FC9DCA00256E43 /* MainMenu.xib */,
 				045EC3D029FC9DCA00256E43 /* FileAuditSystem.entitlements */,
+				04565C6529FE9B8F00A8AA00 /* Loging */,
 			);
 			path = FileAuditSystem;
 			sourceTree = "<group>";
@@ -135,7 +170,6 @@
 				045EC3D929FCA62400256E43 /* FolderManageViewController.xib */,
 				045EC3DC29FCA94D00256E43 /* CheckExtensionViewController.swift */,
 				045EC3DD29FCA94D00256E43 /* CheckExtensionViewController.xib */,
-				045EC40B29FCB9AE00256E43 /* ExtensionDelegate.swift */,
 			);
 			path = "UI Screens";
 			sourceTree = "<group>";
@@ -143,25 +177,34 @@
 		045EC3F829FCB3D200256E43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				042B60DF29FF7E32000870EC /* libbsm.0.tbd */,
+				042B60DE29FF7BB1000870EC /* libbsm.tbd */,
 				045EC40729FCB72400256E43 /* SystemExtensions.framework */,
 				045EC3F929FCB3D200256E43 /* libEndpointSecurity.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		04C3A1D829FD545E00EE8FB6 /* FileAuditSystemExtension */ = {
-			isa = PBXGroup;
-			children = (
-				04C3A1D929FD545E00EE8FB6 /* main.swift */,
-				04C3A1DB29FD545E00EE8FB6 /* Info.plist */,
-				04C3A1DC29FD545E00EE8FB6 /* FileAuditSystemExtension.entitlements */,
-			);
-			path = FileAuditSystemExtension;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		042B60D029FF7A8E000870EC /* FileAuditSystemExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042B60DB29FF7A8E000870EC /* Build configuration list for PBXNativeTarget "FileAuditSystemExtension" */;
+			buildPhases = (
+				042B60CD29FF7A8E000870EC /* Sources */,
+				042B60CE29FF7A8E000870EC /* Frameworks */,
+				042B60CF29FF7A8E000870EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileAuditSystemExtension;
+			productName = FileAuditSystemExtension;
+			productReference = 042B60D129FF7A8E000870EC /* com.anoop.FileAuditSystem.Extension.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
 		045EC3C529FC9DC900256E43 /* FileAuditSystem */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045EC3D329FC9DCA00256E43 /* Build configuration list for PBXNativeTarget "FileAuditSystem" */;
@@ -175,29 +218,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				04C3A1DE29FD545E00EE8FB6 /* PBXTargetDependency */,
+				042B60D929FF7A8E000870EC /* PBXTargetDependency */,
 			);
 			name = FileAuditSystem;
 			productName = FileAuditSystem;
 			productReference = 045EC3C629FC9DC900256E43 /* FileAuditSystem.app */;
 			productType = "com.apple.product-type.application";
-		};
-		04C3A1D529FD545E00EE8FB6 /* FileAuditSystemExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04C3A1E029FD545E00EE8FB6 /* Build configuration list for PBXNativeTarget "FileAuditSystemExtension" */;
-			buildPhases = (
-				04C3A1D229FD545E00EE8FB6 /* Sources */,
-				04C3A1D329FD545E00EE8FB6 /* Frameworks */,
-				04C3A1D429FD545E00EE8FB6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FileAuditSystemExtension;
-			productName = FileAuditSystemExtension;
-			productReference = 04C3A1D629FD545E00EE8FB6 /* com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension */;
-			productType = "com.apple.product-type.system-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -209,10 +235,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					045EC3C529FC9DC900256E43 = {
+					042B60D029FF7A8E000870EC = {
 						CreatedOnToolsVersion = 14.3;
 					};
-					04C3A1D529FD545E00EE8FB6 = {
+					045EC3C529FC9DC900256E43 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -231,12 +257,19 @@
 			projectRoot = "";
 			targets = (
 				045EC3C529FC9DC900256E43 /* FileAuditSystem */,
-				04C3A1D529FD545E00EE8FB6 /* FileAuditSystemExtension */,
+				042B60D029FF7A8E000870EC /* FileAuditSystemExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		042B60CF29FF7A8E000870EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		045EC3C429FC9DC900256E43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,43 +281,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04C3A1D429FD545E00EE8FB6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		042B60CD29FF7A8E000870EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042B60D529FF7A8E000870EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		045EC3C229FC9DC900256E43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04565C5E29FE5D8D00A8AA00 /* ExtensionInstaller.swift in Sources */,
 				045EC3DE29FCA94D00256E43 /* CheckExtensionViewController.swift in Sources */,
 				045EC3CA29FC9DC900256E43 /* AppDelegate.swift in Sources */,
+				04565C6429FE9A8200A8AA00 /* LogObject.swift in Sources */,
 				045EC40C29FCB9AE00256E43 /* ExtensionDelegate.swift in Sources */,
+				04565C6729FE9BB400A8AA00 /* AccessType.swift in Sources */,
+				04565C6229FE9A1D00A8AA00 /* Logger.swift in Sources */,
 				04C3A1E429FD5B0E00EE8FB6 /* InstallerDelegate.swift in Sources */,
 				045EC3DA29FCA62400256E43 /* FolderManageViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04C3A1D229FD545E00EE8FB6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04C3A1DA29FD545E00EE8FB6 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04C3A1DE29FD545E00EE8FB6 /* PBXTargetDependency */ = {
+		042B60D929FF7A8E000870EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04C3A1D529FD545E00EE8FB6 /* FileAuditSystemExtension */;
-			targetProxy = 04C3A1DD29FD545E00EE8FB6 /* PBXContainerItemProxy */;
+			target = 042B60D029FF7A8E000870EC /* FileAuditSystemExtension */;
+			targetProxy = 042B60D829FF7A8E000870EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -300,6 +330,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		042B60DC29FF7A8E000870EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FileAuditSystemExtension/FileAuditSystemExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = NXDQ3VB6JD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FileAuditSystemExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FileAuditSystemExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSystemExtensionUsageDescription = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem.Extension;
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = DirectoryMonitorExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		042B60DD29FF7A8E000870EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FileAuditSystemExtension/FileAuditSystemExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = NXDQ3VB6JD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FileAuditSystemExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FileAuditSystemExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSystemExtensionUsageDescription = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem.Extension;
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = DirectoryMonitorExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
 		045EC3D129FC9DCA00256E43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,10 +514,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FileAuditSystem/FileAuditSystem.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXDQ3VB6JD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = NXDQ3VB6JD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -435,6 +532,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = DirectoryMonitorApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -447,10 +546,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FileAuditSystem/FileAuditSystem.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXDQ3VB6JD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = NXDQ3VB6JD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -462,60 +564,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		04C3A1E129FD545E00EE8FB6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = FileAuditSystemExtension/FileAuditSystemExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXDQ3VB6JD;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FileAuditSystemExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FileAuditSystemExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem.FileAuditSystemExtension;
-				PRODUCT_NAME = "$(inherited)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		04C3A1E229FD545E00EE8FB6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = FileAuditSystemExtension/FileAuditSystemExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXDQ3VB6JD;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FileAuditSystemExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FileAuditSystemExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.anoop.FileAuditSystem.FileAuditSystemExtension;
-				PRODUCT_NAME = "$(inherited)";
-				SKIP_INSTALL = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = DirectoryMonitorApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -524,6 +574,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		042B60DB29FF7A8E000870EC /* Build configuration list for PBXNativeTarget "FileAuditSystemExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042B60DC29FF7A8E000870EC /* Debug */,
+				042B60DD29FF7A8E000870EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		045EC3C129FC9DC900256E43 /* Build configuration list for PBXProject "FileAuditSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -538,15 +597,6 @@
 			buildConfigurations = (
 				045EC3D429FC9DCA00256E43 /* Debug */,
 				045EC3D529FC9DCA00256E43 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		04C3A1E029FD545E00EE8FB6 /* Build configuration list for PBXNativeTarget "FileAuditSystemExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04C3A1E129FD545E00EE8FB6 /* Debug */,
-				04C3A1E229FD545E00EE8FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,6 +8,7 @@
 import Foundation
 import SystemExtensions
 
+// separate file
 enum ExtensionInstallStatus {
     case Success
     case Fail
@@ -32,7 +33,7 @@ class ExtensionDelegate : NSObject, OSSystemExtensionRequestDelegate{
     
     func request(_ request: OSSystemExtensionRequest, didFinishWithResult result: OSSystemExtensionRequest.Result) {
         print("Sext didFinishWithResult \(result.rawValue)")
-        Thread.sleep(forTimeInterval: 3)
+//        Thread.sleep(forTimeInterval: 3)
         status = .Success
     }
     

@@ -10,12 +10,8 @@ import SystemExtensions
 
 
 class CheckExtensionViewController: NSViewController {
-
-    let extIdentifier = "com.anoop.FileAuditSystem.FileAuditSystemExtension"
-    let extensionDelegate = ExtensionDelegate()
-    
     var installerDelegate: InstallerDelegate?
-    
+    let extensionInstaller = ExtensionInstaller()
     var isRequested = false
     
     @IBAction func install(_ sender: Any) {
@@ -25,34 +21,56 @@ class CheckExtensionViewController: NSViewController {
         }
         
         DispatchQueue.global(qos: .userInitiated).async {
-            let request = OSSystemExtensionRequest.activationRequest(forExtensionWithIdentifier: self.extIdentifier, queue: DispatchQueue.main)
-            request.delegate = self.extensionDelegate
-            OSSystemExtensionManager.shared.submitRequest(request)
             self.isRequested = true
-            print("Sext install request submitted")
-            
-            // wait till gets installed, and then proceed to next UI screen
-            while self.extensionDelegate.status != .Success {
-                print("kext waiting for approval...status is: \(self.extensionDelegate.status)")
-            }
-            print("sext installed")
+            self.extensionInstaller.install()
             DispatchQueue.main.async {
                 self.installerDelegate?.extensionInstalled()
             }
+
         }
     }
     
     @IBAction func uninstall(_ sender: Any) {
-        let request = OSSystemExtensionRequest.deactivationRequest(forExtensionWithIdentifier: self.extIdentifier, queue: DispatchQueue.main)
-        request.delegate = self.extensionDelegate
-        OSSystemExtensionManager.shared.submitRequest(request)
         self.isRequested = false
-        print("Sext uninstall request submitted")
+        extensionInstaller.uninstall()
     }
     
+    // test
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+    @IBOutlet var fileName: NSTextField!
+    @IBOutlet var operation: NSTextField!
+    @IBOutlet var processId: NSTextField!
+    
+    @IBAction func addRecord(_ sender: Any) {
+                
+        let logObject = LogObject(fileName: fileName.stringValue,
+                                   time: Date(),
+                                  userName: NSFullUserName(),
+                                   processId: processId.stringValue,
+                                   accessType: getAccessType())
+        
+        
+        if Logger.log(logObject: logObject) {
+            print("Succeed to log")
+        }
+        else {
+            print("Failed to log")
+        }
+        
+    }
+    
+    func getAccessType() -> AccessType{
+        switch operation.stringValue {
+        case "c":
+            return .Create
+        case "u":
+            return .Update
+        case "r":
+            return .Read
+        case "d":
+            return .Delete
+        default:
+            return .Delete
+        }
     }
 }

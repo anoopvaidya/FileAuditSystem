@@ -15,8 +15,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04C3A1D529FD545E00EE8FB6"
-               BuildableName = "com.anoop.FileAuditSystem.FileAuditSystemExtension.systemextension"
+               BlueprintIdentifier = "042B60D029FF7A8E000870EC"
+               BuildableName = "com.anoop.FileAuditSystem.Extension.systemextension"
                BlueprintName = "FileAuditSystemExtension"
                ReferencedContainer = "container:FileAuditSystem.xcodeproj">
             </BuildableReference>
