@@ -17,7 +17,18 @@ func handleEvent() {
     
 }
 
+//func parseWriteNotification(esMessage: es_message_t) -> EndpointSecurityFileChangeNotification? {
+//    let filePath = getFilePath(file: esMessage.event.write.target.pointee)
+//
+//    let parsedMessage = EndpointSecurityFileChangeNotification(type: EndpointSecurityFileChangeNotificationType.write,
+//                                                               pathList: [filePath])
+//
+//    return parsedMessage
+//}
 
+func getFilePath(file: es_file_t) -> String {
+    return String(cString: file.path.data!)
+}
 
 
 // Create the client
@@ -26,7 +37,7 @@ let result = es_new_client(&client) { (client, message) in
     print("client is \(client) and message is \(message)")
     //NSLog("Anay testing...message: %@, from client", message.pointee.event_type)
     
-//    NSLog("Anay :) done")
+//    var messageOpt: EndpointSecurityFileChangeNotification?
     
     switch message.pointee.event_type {
     case ES_EVENT_TYPE_NOTIFY_EXEC:
@@ -36,9 +47,13 @@ let result = es_new_client(&client) { (client, message) in
 //               message.pointee.event.exec.target.pointee.executable.pointee.path.data);
         os_log("Something here")
         
-        os_log("%s , image:%s",
-               message.pointee.process.pointee.executable.pointee.path.data,
-               message.pointee.event.exec.target.pointee.executable.pointee.path.data);
+        let filePath = getFilePath(file: message.pointee.event.write.target.pointee)
+        os_log("1 FilePath: %@", filePath)
+        os_log("2 FilePath %{public}@ ", type: .info, filePath)
+
+        
+//        var msg = parseExecNotification(esMessage: message.pointee)
+
     default:
         os_log("Nothing here")
     }
