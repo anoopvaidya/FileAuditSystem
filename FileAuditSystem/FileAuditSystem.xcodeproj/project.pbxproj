@@ -24,6 +24,7 @@
 		045EC3DF29FCA94D00256E43 /* CheckExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EC3DD29FCA94D00256E43 /* CheckExtensionViewController.xib */; };
 		045EC40829FCB72400256E43 /* SystemExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EC40729FCB72400256E43 /* SystemExtensions.framework */; };
 		045EC40C29FCB9AE00256E43 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC40B29FCB9AE00256E43 /* ExtensionDelegate.swift */; };
+		04BE86D72A00074A0010F916 /* SysExtensionInstallStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE86D62A00074A0010F916 /* SysExtensionInstallStatus.swift */; };
 		04C3A1E429FD5B0E00EE8FB6 /* InstallerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		045EC3F929FCB3D200256E43 /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
 		045EC40729FCB72400256E43 /* SystemExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemExtensions.framework; path = System/Library/Frameworks/SystemExtensions.framework; sourceTree = SDKROOT; };
 		045EC40B29FCB9AE00256E43 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		04BE86D62A00074A0010F916 /* SysExtensionInstallStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysExtensionInstallStatus.swift; sourceTree = "<group>"; };
 		04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				045EC3C929FC9DC900256E43 /* AppDelegate.swift */,
+				04BE86D62A00074A0010F916 /* SysExtensionInstallStatus.swift */,
 				04565C5D29FE5D8D00A8AA00 /* ExtensionInstaller.swift */,
 				04C3A1E329FD5B0E00EE8FB6 /* InstallerDelegate.swift */,
 				045EC40B29FCB9AE00256E43 /* ExtensionDelegate.swift */,
@@ -305,6 +308,7 @@
 				04565C6229FE9A1D00A8AA00 /* Logger.swift in Sources */,
 				04C3A1E429FD5B0E00EE8FB6 /* InstallerDelegate.swift in Sources */,
 				045EC3DA29FCA62400256E43 /* FolderManageViewController.swift in Sources */,
+				04BE86D72A00074A0010F916 /* SysExtensionInstallStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

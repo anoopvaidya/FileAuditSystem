@@ -20,13 +20,11 @@ class ExtensionInstaller : NSObject {
         let request = OSSystemExtensionRequest.activationRequest(forExtensionWithIdentifier: self.extIdentifier, queue: DispatchQueue.main)
         request.delegate = self.extensionDelegate
         OSSystemExtensionManager.shared.submitRequest(request)
-        print("Sext install request submitted")
         
         // wait till gets installed, and then proceed to next UI screen
         while self.extensionDelegate.status != .Success {
-            print("sext waiting for approval...status is: \(self.extensionDelegate.status)")
+            print("waiting for approval...status is: \(self.extensionDelegate.status)")
         }
-        print("sext installed")
     }
     
     
@@ -34,7 +32,5 @@ class ExtensionInstaller : NSObject {
         let request = OSSystemExtensionRequest.deactivationRequest(forExtensionWithIdentifier: self.extIdentifier, queue: DispatchQueue.main)
         request.delegate = self.extensionDelegate
         OSSystemExtensionManager.shared.submitRequest(request)
-        print("Sext uninstall request submitted")
     }
-    
 }

@@ -8,16 +8,9 @@
 import Foundation
 import SystemExtensions
 
-// separate file
-enum ExtensionInstallStatus {
-    case Success
-    case Fail
-    case InProgress
-}
-
 class ExtensionDelegate : NSObject, OSSystemExtensionRequestDelegate{
     
-    var status: ExtensionInstallStatus = .InProgress
+    var status: SysExtensionInstallStatus = .InProgress
     
     func request(_ request: OSSystemExtensionRequest, actionForReplacingExtension existing: OSSystemExtensionProperties, withExtension ext: OSSystemExtensionProperties) -> OSSystemExtensionRequest.ReplacementAction {
         
@@ -33,7 +26,6 @@ class ExtensionDelegate : NSObject, OSSystemExtensionRequestDelegate{
     
     func request(_ request: OSSystemExtensionRequest, didFinishWithResult result: OSSystemExtensionRequest.Result) {
         print("Sext didFinishWithResult \(result.rawValue)")
-//        Thread.sleep(forTimeInterval: 3)
         status = .Success
     }
     

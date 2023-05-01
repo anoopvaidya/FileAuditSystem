@@ -35,7 +35,9 @@ class CheckExtensionViewController: NSViewController {
         extensionInstaller.uninstall()
     }
     
-    // test
+    
+    // The below is for Testing the Logger by supplying user given test data.
+    // Once the File Monitoring/Events are done, this should be deleted.
     
     @IBOutlet var fileName: NSTextField!
     @IBOutlet var operation: NSTextField!
